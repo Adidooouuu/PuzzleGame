@@ -5,3 +5,5 @@ Afin de vous connecter à la base de données, rendez-vous dans assets > php > i
 - le nom de votre base de données (database)
 - votre uilisateur de base de données (user)
 - votre mot de passe de connexion à la base de données (password)
+
+Ceci après y avoir créé de votre côté.
