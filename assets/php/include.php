@@ -5,10 +5,10 @@
     ini_set('error_log', 'log.txt');
 	
 	// Parametres de connexion
-	$serveur  = "localhost:3306";
-	$database = "bdd_leaderboard";
-	$user     = "bdd_leaderboard";
-	$password = "ZsQZqUzxwzV0YXBC";
+	$serveur  = "";
+	$database = "";
+	$user     = "";
+	$password = "";
 	
 	try {	
 		// Connexion a la base de donnees
