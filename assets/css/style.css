@@ -1,0 +1,331 @@
+*, *::before, *::after
+{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  transition : all 0.25s;
+}
+
+/*Accueil*/
+
+h1
+{
+  font-weight : normal;
+}
+
+body
+{
+  min-height : 100vh;
+  background : black url(../img/bg.jpg) no-repeat 50% 50%;
+  background-size : cover;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+}
+
+img
+{
+  display : block;
+  width : 100%;
+  height : 100%;
+}
+
+.bold
+{
+  font-weight : bold;
+}
+
+#home
+{
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  justify-content : center;
+}
+
+.logo
+{
+  width : auto;
+  height : 15vh;
+  min-height: 5rem;
+  margin : 5vh auto;
+  box-shadow : -10px -10px 25px -5px #000000,
+                10px 10px 25px -5px #000000;
+  border-radius : 15px;
+}
+
+.logo:hover
+{
+  transform : rotate(-5deg);
+}
+
+.id_player
+{
+  display : flex;
+  flex-direction : column;
+  padding : 3rem 6rem;
+  min-width: 20rem;
+  background : rgba(234,210,190,255);
+  border-radius : 15px;
+  box-shadow :inset 10px 10px 5px -5px #C6B298,
+              inset -10px -10px 5px -5px #C6B298,
+              -10px -10px 50px -5px #000000,
+              10px 10px 50px -5px #000000;
+}
+
+.id_player:hover
+{
+  box-shadow :inset 10px 10px 5px -5px #C6B298,
+              inset -10px -10px 5px -5px #C6B298,
+              -10px -10px 25px -5px #000000,
+              10px 10px 25px -5px #000000;
+  transition : padding 0s;
+}
+
+.id_player > .start, .id_player > label
+{
+  align-self : center;
+  margin : 1rem 0 0.5rem 0;
+  font-weight : bold;
+}
+
+.id_player_form_label, .btn, #header_game > h1, #header_win > h1, #error, .leaderboard_title
+{
+  font-family : 'Luckiest Guy', cursive;
+}
+
+.id_player_form_label, #header_game > h1, #header_win > h1, #error
+{
+  font-size : 1.25rem;
+  letter-spacing : 1.25px;
+}
+
+#header_game > h1, #header_win > h1, #error
+{
+  text-align : center;
+  color : white;
+  padding : 2rem;
+  font-size : 2rem;
+}
+
+#error{
+  font-size: 1.25rem;
+  padding-bottom: 0rem;
+  font-style : italic;
+}
+
+.btn
+{
+  font-size : 1rem;
+  letter-spacing : 1px;
+  width : 150px;
+  height : 75px;
+  border : none;
+  cursor : pointer;
+}
+
+#id_player_form_submit
+{
+  background : transparent url(../img/puzzle.png) no-repeat 50% 50%;
+  background-size : contain;
+}
+
+#retry_btn
+{
+  background : transparent url(../img/refresh.png) no-repeat 50% 50%;
+  background-size : contain;
+}
+
+#puzzle_validation_btn
+{
+  background : transparent url(../img/check.png) no-repeat 50% 50%;
+  background-size : contain;
+}
+
+#menu_btn
+{
+  background : transparent url(../img/home.png) no-repeat 50% 50%;
+  background-size : contain;
+}
+
+#id_player_form_submit:hover, #retry_btn:hover, #puzzle_validation_btn:hover, #menu_btn:hover
+{
+  background : #fbf6f2;
+  border-radius : 50px;
+  box-shadow : 0px 10px 15px -5px #C6B298, inset 0px 10px 15px -5px rgba(198,178,152,0.5);
+}
+
+#id_player_form_submit:focus, #retry_btn:focus, #puzzle_validation_btn:focus, #menu_btn:focus
+{
+  border-radius : 15px;
+  box-shadow : inset 0px 10px 15px -5px #C6B298, 0px 10px 15px -5px rgba(198,178,152,0.5);
+}
+
+#name_player, #difficulty
+{
+  height: 2rem;
+  padding : 0.5rem;
+  border-radius : 15px;
+  border : none;
+}
+
+input:focus, select:focus
+{
+  outline : none;
+}
+
+#name_player:hover, #name_player:focus, #difficulty:hover, #difficulty:focus
+{
+  box-shadow : 0px 10px 5px -5px #C6B298;
+}
+
+#difficulty:focus
+{
+  border-radius : 15px 15px 0 0;
+}
+
+#error_msg
+{
+  text-align : center;
+  font-style : italic;
+}
+
+
+/*page puzzle */
+
+.puzzle {
+  display : flex;
+  flex-direction : column;
+  margin: auto;
+  width: 35rem;
+  padding : 3rem 6rem;
+  background : rgba(234,210,190,255);
+  border-radius : 15px;
+  box-shadow :inset 10px 10px 5px -5px #C6B298,
+              inset -10px -10px 5px -5px #C6B298,
+              -10px -10px 50px -5px #000000,
+              10px 10px 50px -5px #000000;
+  align-items: center;
+}
+
+.puzzle:hover {
+  box-shadow :inset 10px 10px 5px -5px #C6B298,
+              inset -10px -10px 5px -5px #C6B298,
+              -10px -10px 25px -5px #000000,
+              10px 10px 25px -5px #000000;
+}
+
+.puzzle_grid {
+  width: 360px;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.puzzle_grid_piece {
+  border: 1px solid black;
+  background-image: url('../img/point-interrogation.png');
+  background-size: cover;
+}
+
+.puzzle_grid_1 .puzzle_grid_piece {
+  flex-basis: 120px;
+  height: 120px;
+}
+
+.puzzle_grid_2 .puzzle_grid_piece {
+  flex-basis: 90px;
+  height: 90px;
+}
+
+.puzzle_grid_3 .puzzle_grid_piece {
+  flex-basis: 72px;
+  height: 72px;
+}
+
+
+/* CSS des pièces */
+
+
+#puzzle-pieces{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  min-width: 15rem;
+  height: 100vh;
+  right: 0;
+  position: absolute;
+  overflow-y: auto;
+}
+
+#puzzle-pieces *{
+  margin: 1rem 0;
+}
+
+.piece{
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.puzzle_grid_piece *{
+  width: 100%;
+  height: 100%;
+}
+
+/*espace win*/
+
+#results
+{
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+  justify-content : center;
+}
+
+.container
+{
+  display : flex;
+  flex-direction : column;
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+  padding : 3rem 6rem;
+  background : rgba(234,210,190,255);
+  border-radius : 15px;
+  box-shadow :inset 10px 10px 5px -5px #C6B298,
+              inset -10px -10px 5px -5px #C6B298,
+              -10px -10px 50px -5px #000000,
+              10px 10px 50px -5px #000000;
+}
+
+.container:hover {
+  box-shadow :inset 10px 10px 5px -5px #C6B298,
+              inset -10px -10px 5px -5px #C6B298,
+              -10px -10px 25px -5px #000000,
+              10px 10px 25px -5px #000000;
+}
+
+.buttons
+{
+  display: flex;
+  margin : 24px 0 -24px 0;
+}
+
+/*Leaderboard*/
+
+.score, .leaderboard_title, .leaderboard, .cell, th
+{
+  text-align : center;
+}
+
+.leaderboard_title
+{
+  padding : 24px 0;
+}
+
+.leaderboard, .cell, th
+{
+  border : 1px solid black;
+  border-collapse : collapse;
+}
