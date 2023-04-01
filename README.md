@@ -7,3 +7,7 @@ Afin de vous connecter à la base de données, rendez-vous dans assets > php > <
 - votre mot de passe de connexion à la base de données (password)
 
 Ceci après y avoir créé de votre côté.
+
+# Feedback commenté
+14/20
+"Travail de bonne qualité qui répond au cahier des charges demandé (jeu fonctionnel, utilisation de requêtes AJAX et de jQuery, dialogue avec une BDD). Quelques choix de départ hasardeux (1 seule page, vérification côté Javascript, système de score notamment) pénalisent néanmoins votre production. Rendu visuel agréable. Document de synthèse complet et pertinent."
